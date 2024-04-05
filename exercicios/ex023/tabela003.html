@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"content="widgt=device-widgt, initial-scale=1.0">
+  
+  <title>Ajuste de Colunas</title>
+  
+  <style>
+  	body{
+  		font-family: Arial, Verdana, Sans-Serif;
+  		margin: 0px;
+  		padding: 0px;
+  	}
+  	h1{
+  		padding: 5px;
+  		text-align: center;
+  	}
+  	div{
+  		overflow-x: auto;
+  		margin-left: 10px;
+  		margin-right: 10px;
+  	}
+  	table{
+  		position: relative;
+  		margin: auto;
+  		margin-top: 10px;
+  		width: 500px;
+  		border-collapse: collapse;
+  	}
+  	col.cestado{
+  		background-color: red;
+  	}
+  	caption{
+  		background-color: lightgray;
+  		font-size: 1.5em;
+  		font-weight: bold;
+  		padding: 10px;
+  	}
+  	thead, tfoot{
+  		background-color: darkgray;
+  		color: white;
+  	}
+  	thead > tr > th{
+  		position: sticky;
+  		top: 0;
+  		background-color: darkgray;
+  	}
+  	tbody > tr:nth-child(odd){
+  			background-color: lightblue;
+  	}
+  	th, td{
+  		border: solid black 1px;
+  		padding: 5px;
+  	}
+  	th.pop{
+  		width: 50px;
+  	}
+  	th.pos{
+  		width: 50px;
+  	}
+  	td.posicao{
+  		text-align: center;
+  	}
+  	td.estado{
+  		text-align: left;
+  	}
+  	td.numero{
+  		text-align: right;
+  	}
+  </style>
+</head>
+<body>
+	<h1>Tabelas Responsivas</h1>
+	<div>
+		<table>
+			<colgroup>
+				<col class="cpos">
+				<col class="cestado">
+				<col class="chabitantes">
+				<col class="coutros">
+			</colgroup>
+			<caption>
+				População das Unidades Federativas
+			</caption>
+			<thead>
+				<tr>
+					<th class="pos">Posição</th>
+					<th>Estado</th>
+					<th class="pop">População</th>
+					<th>Outros</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="posicao">1</td>
+					<td class="estado">São Paulo</td>
+					<td class="numero">41.901.219</td>
+					<td>0.0</td>
+				</tr>
+				<tr>
+					<td class="posicao">2</td>
+					<td class="estado">Minas Gerais</td>
+					<td class="numero">19.855.832</td>
+					<td>0.0</td>
+				</tr>
+				<tr>
+					<td class="posicao">3</td>
+					<td class="estado">Rio de Janeiro</td>
+					<td class="numero">16.231.365</td>
+					<td>0.0</td>
+				</tr>
+				<tr>
+					<td class="posicao">4</td>
+					<td class="estado">Bahia</td>
+					<td class="numero">14.175.341</td>
+					<td>0.0</td>
+				</tr>
+				<tr>
+					<td class="posicao">5</td>
+					<td class="estado">Rio Grande do Sul</td>
+					<td class="numero">10.770.603</td>
+					<td>0.0</td>
+				</tr>
+				<tr>
+					<td class="posicao">6</td>
+					<td class="estado">Paraná</td>
+					<td class="numero">10.577.755</td>
+					<td>0.0</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<th colspan="2">Total de Habitantes</th>
+					<td class="numero"><strong>210.147.125</strong></td>
+					<td>0.0</td>
+				</tr>
+			</tfoot>
+		</table>
+	</div>
+</body>
+</html>

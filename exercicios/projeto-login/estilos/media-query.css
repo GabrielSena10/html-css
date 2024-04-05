@@ -1,0 +1,89 @@
+@charset 'UTF-8';
+
+/*Media Tablet*/
+@media screen and (min-width: 481px) and (max-width: 768px) and (min-height: 480px){
+	body{
+		background-image: linear-gradient(to top, #aaddaa, #6800aa);
+	}
+	main{
+		height: 360px;
+		width: 80vw;
+	}
+	section#imagem{
+		float: left;
+		height: 100%;
+		width: 35%;
+	}
+	section#login{
+		float: right;
+		height: 100%;
+		width: 65%;
+	}
+	section#login > h1{
+		font-size: 2.3em;
+	}
+	section#login > p{
+		font-size: 1em;
+		padding: 6px;
+	}
+	form{
+		margin-top: ;
+	}
+}
+
+/*Media desktop*/
+@media screen and (min-width: 769px) {
+	body{
+		background-image: linear-gradient(to top, #aaddaa, #6800aa);
+	}
+	main{
+		height: 400px;
+		width: 740px;
+	}
+	section#imagem{
+		float: right;
+		height: 100%;
+		width: 50%;
+	}
+	section#login{
+		float: left;
+		height: 100%;
+		width: 50%;
+	}
+	section#login >  h1{
+		font-size: 2.7em;
+	}
+	section#login > p{
+		font-size: 1.3em;
+		padding: 10px;
+	}
+}
+/*Media landscape*/
+@media screen and (orientation: landscape) and (max-height: 479px){
+	main{
+		height: 230px;
+		width: 80vw;
+	}
+	section#imagem{
+		float: left;
+		height: 100%;
+		width: 30%;
+	}
+	section#login{
+		float: right;
+		height: 100%;
+		width: 70%;
+	}
+	section#login > h1{
+		padding: 5px;
+	}
+	form > p#pinput{
+		display: inline-block;
+	  width: 49.4%;
+	}
+	form > a{
+		display: inline-block;
+		width: 49.4%;
+		transform: translateY(-2px);
+	}
+}

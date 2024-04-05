@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"content="widgt=device-widgt, initial-scale=1.0">
+  
+  <style>
+    /*Declarações gerais*/
+  	*{
+  		margin: 0px;
+  		padding: 0px;
+  		font-family: Arial, Verdana, Sans-Serif;
+  	}
+  	body{
+  		height: 100vh;
+  		width: 100vw;
+  		background-color: #233eff;
+  		background-size: contain;
+  		background-repeat: no-repeat;
+  	}
+  	h1{
+  		color: white;
+  		text-shadow: 2px 2px 2px darkblue;
+  		padding: 10px;
+  		text-align: center;
+  	}
+  	
+  	/*Declarações portrait*/
+  	@media screen and (orientation: portrait){
+  		body{
+  			background-image: url('imagens/cev-portrait.jpg');
+  			background-position: center bottom;
+  		}
+  	}
+  	
+  	/*Declarações landscape*/
+  	@media screen and (orientation: landscape){
+  		body{
+  			background-image: url('imagens/cev-landscape.jpg');
+  			background-position: left bottom;
+  		}
+  	}
+  	
+  </style>
+  
+  <title>Media Query</title>
+  
+</head>
+<body>
+		<h1>Mude a orientação do celular</h1>
+</body>
+</html>

@@ -1,0 +1,31 @@
+@charset "UTF-8";
+body{
+  		font-family: Arial, Verdana, serif;
+  	}
+  	h1{
+  		text-align: center;
+  		color: #007700;
+  	}
+  	h2{
+  		text-align: center;
+  		color: #dd0000;
+  	}
+  	p{
+  		text-align: justify;
+  		color: #0000df;
+  	}
+  	h2#titulo2{
+  		color: #444444;
+  	}
+  	#titulo4{
+  		color: #11ff77;
+  	}
+  	.p1{
+  		color: #aa4422;
+  	}
+  	.p2{
+  		color: #1166dd;
+  	}
+  	.destaque{
+  		background-color: #ddaadd;
+  	}

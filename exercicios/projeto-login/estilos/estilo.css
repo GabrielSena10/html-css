@@ -1,0 +1,113 @@
+@charset 'UTF-8';
+
+*{
+	font-family: Arial, Verdana, Sans-Serif;
+	font-size: 1em;
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+html, body{
+	height: 100vh;
+	width: 100vw;
+}
+body{
+	position: relative;
+  background-color: #6800aa;
+}
+main{
+	position: absolute;
+	top: 50vh;
+	left: 50vw;
+	background-color: #000000;
+	height: 455px;
+	width: 250px;
+	border-radius: 20px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+	transform: translate(-50%, -50%);
+	transition: width 0.3s, height 0.3s;
+	transition-timing-function: ease;
+}
+section#imagem{
+	display: block;
+	height: 30%;
+	width: 100%;
+	background: #6800aa url(../imagens/img-login.jpg) center center no-repeat;
+	background-size: cover;
+}
+section#login{
+	display: block;
+	height: 70%;
+	width: 100%;
+	padding: 10px;
+  background-color: white;
+}
+section#login > h1{
+	text-align: center;
+	font-size: 1.5em;
+	padding: 10px;
+	text-shadow: 0.5px 0.5px 0.5px rgba(0, 0 ,0 , 0.4);
+}
+section#login > p{
+	text-align: justify;
+	font-size: 0.9em;
+	margin-bottom: 10px;
+}
+form p.icon{
+	background-color: #6800aa;
+	border-radius: 7px;
+	margin-bottom: 3px;
+}
+i{
+	display: inline-block;
+	/*background-color: black;*/
+	text-align: center;
+	color: white;
+	font-size: 2em;
+	height: 30px;
+	width: 40px;
+	transform: translateY(4px);
+}
+label.some{
+	display: none;
+}
+input{
+	border: none;
+	border-radius: 7px;
+}
+input.cadastro{
+	background-color: #aaddaa;
+	height: 40px;
+	width: calc(100% - 44px);
+	border: 2px solid #6800aa;
+}
+input.cadastro:focus{
+	background-color: white;
+}
+input.sub{
+	background-color: #44aa77;
+	color: white;
+	height: 42px;
+	width: 100%;
+	cursor: pointer;
+}
+input.sub:hover{
+	background-color: #77ddaa;
+}
+form > a{
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	height: 42px;
+	width: 100%;
+	color: #44aa77;
+	background-color: white;
+	border: 2px solid #44aa77;
+	border-radius: 7px;
+	margin-top: 3px;
+	padding-top: 8px;
+}
+form > a:hover{
+	background-color: #dddddd;
+}

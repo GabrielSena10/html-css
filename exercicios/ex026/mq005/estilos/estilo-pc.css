@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+h1{
+	padding: 30px;
+}
+i#burguer{
+	display: none;
+}
+menu#itens{
+	display: inline-block;
+	padding-left: 20px;
+}
+menu > nav > ul > li{
+	display: inline-block;
+}
+menu > nav > ul > li > a{
+	border: none;
+	border-radius: 10px;
+}

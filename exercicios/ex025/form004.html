@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"content="widgt=device-widgt, initial-scale=1.0">
+  
+  <title>Formulário</title>
+  
+</head>
+<body>
+	<h1>
+		Teste de Formulário 
+	</h1>
+	<form method="get" autocomplete="on">
+		<fieldset>
+			<legend>
+				Dados pessoais
+			</legend>
+			<p>
+				<label for="idnome">Nome: </label>
+				<input type="text" name="nome" id="idnome" placeholder="Nome completo" required>
+			</p>
+			<p>
+				<label for="idemail">Email:</label>
+				<input type="email" name="email" id="idemail" autocomplete="email" placeholder="seuemail@mail.com" required>
+			</p>
+			<p>
+				<label for="idtel">Telefone:</label>
+				<input type="tel" name="tel" id="idtel" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxx-xxxx" required>
+			</p>
+			<!---->
+			<p>
+				<input type="submit" value="Enviar">
+				<input type="reset" value="Limpar">
+			</p>
+		</fieldset>
+	</form>
+</body>
+</html>

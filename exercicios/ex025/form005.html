@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"content="widgt=device-widgt, initial-scale=1.0">
+  
+  <title>Formulário</title>
+  
+</head>
+<body>
+	<h1>
+		Teste de Formulário 
+	</h1>
+	<form method="get">
+		<fieldset>
+			<legend>Sexo</legend>
+				<p>
+				<label for="idnome">Nome: </label>
+				<input type="text" name="nome" id="idnome"  placeholder="Nome" required>
+				</p>
+				<input type="radio" name="sexo" id="idmasc" value="M"> <label for="idmasc"> Masculino</label><br>
+				<input type="radio" name="sexo" id="idfem" value="F"> <label for="idfem"> Feminino</label>
+		</fieldset>
+		<fieldset>
+			<legend>Esportes</legend>
+			<input type="checkbox" name="fut" id="idfut" checked> <label for="idfut"> Futebol</label><br>
+			<input type="checkbox" name="basq" id="idbasq"><label for="idbasq"> Basquete</label><br>
+			<input type="checkbox" name="tenis" id="idtenis"><label for="idtenis"> Tênis</label><br>
+			<input type="checkbox" name="volei" id="idvolei"><label for="idvolei"> Vôlei</label><br>
+		</fieldset>
+		<p>
+			<input type="submit" value="Enviar">
+			<input type="reset" value="Limpar">
+		</p>
+	</form>
+</body>
+</html>

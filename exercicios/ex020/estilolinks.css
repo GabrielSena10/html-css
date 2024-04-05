@@ -1,0 +1,26 @@
+@charset 'UTF-8';
+
+body{
+	background-color: #999999;
+	font-family: Arial, Helvetica, 'Sans-Serif';
+	font-size: 16px;
+}
+h1{
+	color: #337744;
+	text-align: center;
+}
+li{
+	background-color: #dddddd;
+}
+a:visited{
+	color: #ff77ff;
+}
+a:actived{
+	color: #0000ff;
+}
+a:hover{
+	color: #00ff00;
+}
+a::after{
+	content: ' [link]';
+}

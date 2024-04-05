@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background: blue url('../imagens/tela-home-deitado.png') top center no-repeat fixed;
+	background-size: cover;
+}

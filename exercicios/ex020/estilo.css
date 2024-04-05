@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+body{
+  		font-family: Arial, Verdana, serif;
+  	}
+  	h1{
+  		text-align: center;
+  		color: #007700;
+  	}
+  	div.ex1{
+  		background-color: #995555;
+  		height: 70px;
+  		width: 70px;
+  		text-align: center;
+  		border: 1px solid #000000;
+  		display: inline-block;
+  	}
+  	div.ex1:hover{
+  		background-color: #222255;
+  		color: #ffff00;
+  	}
+  	div#ex2 > p{
+  		display: none;
+  	}
+  	div#ex2:hover > p{
+  		display: block;
+  		background-color: #880099;
+  		color: #ffffff;
+  		width: 200px;
+  	}

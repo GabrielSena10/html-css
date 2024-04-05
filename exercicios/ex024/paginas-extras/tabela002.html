@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"content="widgt=device-widgt, initial-scale=1.0">
+  
+  <title>Tabela Semântica</title>
+  
+  <style>
+  	body{
+  		font-family: Arial, Verdana, Sans-Serif;
+  		margin: 0px;
+  		padding: 0px;
+  	}
+  	table{
+  		position: relative;
+  		margin: auto;
+  		margin-top: 10px;
+  		width: 500px;
+  		border-collapse: collapse;
+  	}
+  	caption{
+  		background-color: lightgray;
+  		font-size: 1.5em;
+  		font-weight: bold;
+  		padding: 10px;
+  	}
+  	thead, tfoot{
+  		background-color: darkgray;
+  		color: white;
+  	}
+  	thead > tr > th{
+  		position: sticky;
+  		top: 0;
+  		background-color: darkgray;
+  	}
+  	tbody > tr:nth-child(odd){
+  			background-color: lightblue;
+  	}
+  	th, td{
+  		border: solid black 1px;
+  		padding: 5px;
+  	}
+  	th.pop{
+  		width: 50px;
+  	}
+  	th.pos{
+  		width: 50px;
+  	}
+  	td.posicao{
+  		text-align: center;
+  	}
+  	td.estado{
+  		text-align: left;
+  	}
+  	td.numero{
+  		text-align: right;
+  	}
+  </style>
+</head>
+<body>
+	<table>
+		<caption>
+			População das Unidades Federativas
+		</caption>
+		<thead>
+			<tr>
+				<th class="pos">Posição</th>
+				<th>Estado</th>
+				<th class="pop">População</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="posicao">1</td>
+				<td class="estado">São Paulo</td>
+				<td class="numero">41.901.219</td>
+			</tr>
+			<tr>
+				<td class="posicao">2</td>
+				<td class="estado">Minas Gerais</td>
+				<td class="numero">19.855.832</td>
+			</tr>
+			<tr>
+				<td class="posicao">3</td>
+				<td class="estado">Rio de Janeiro</td>
+				<td class="numero">16.231.365</td>
+			</tr>
+			<tr>
+				<td class="posicao">4</td>
+				<td class="estado">Bahia</td>
+				<td class="numero">14.175.341</td>
+			</tr>
+			<tr>
+				<td class="posicao">5</td>
+				<td class="estado">Rio Grande do Sul</td>
+				<td class="numero">10.770.603</td>
+			</tr>
+			<tr>
+				<td class="posicao">6</td>
+				<td class="estado">Paraná</td>
+				<td class="numero">10.577.755</td>
+			</tr>
+			<tr>
+				<td class="posicao">7</td>
+				<td class="estado">Pernambuco</td>
+				<td class="numero">8.931.028</td>
+			</tr>
+			<tr>
+				<td class="posicao">8</td>
+				<td class="estado">Ceará</td>
+				<td class="numero">8.606.005</td>
+			</tr>
+			<tr>
+				<td class="posicao">9</td>
+				<td class="estado">Pará</td>
+				<td class="numero">7.792.561</td>
+			</tr>
+			<tr>
+				<td class="posicao">10</td>
+				<td class="estado">Maranhão</td>
+				<td class="numero">6.714.314</td>
+			</tr>
+			<tr>
+				<td class="posicao">11</td>
+				<td class="estado">Santa Catarina</td>
+				<td class="numero">6.383.286</td>
+			</tr>
+			<tr>
+				<td class="posicao">12</td>
+				<td class="estado">Goiás</td>
+				<td class="numero">6.154.996</td>
+			</tr>
+			<tr>
+				<td class="posicao">13</td>
+				<td class="estado">Paraíba</td>
+				<td class="numero">3.815.171</td>
+			</tr>
+			<tr>
+				<td class="posicao">14</td>
+				<td class="estado">Amazonas</td>
+				<td class="numero">3.590.985</td>
+			</tr>
+			<tr>
+				<td class="posicao">15</td>
+				<td class="estado">Espírito Santo</td>
+				<td class="numero">3.578.067</td>
+			</tr>
+			<tr>
+				<td class="posicao">16</td>
+				<td class="estado">Rio Grande do Norte</td>
+				<td class="numero">3.228.198</td>
+			</tr>
+			<tr>
+				<td class="posicao">17</td>
+				<td class="estado">Alagoas</td>
+				<td class="numero">3.165.472</td>
+			</tr>
+			<tr>
+				<td class="posicao">18</td>
+				<td class="estado">Piauí</td>
+				<td class="numero">3.160.748</td>
+			</tr>
+			<tr>
+				<td class="posicao">19</td>
+				<td class="estado">Mato Grosso</td>
+				<td class="numero">3.115.336</td>
+			</tr>
+			<tr>
+				<td class="posicao">20</td>
+				<td class="estado">Distrito Federal</td>
+				<td class="numero">2.648.532</td>
+			</tr>
+			<tr>
+				<td class="posicao">21</td>
+				<td class="estado">Mato Grosso do Sul</td>
+				<td class="numero">2.505.088</td>
+			</tr>
+			<tr>
+				<td class="posicao">22</td>
+				<td class="estado">Sergipe</td>
+				<td class="numero">2.110.867</td>
+			</tr>
+			<tr>
+				<td class="posicao">23</td>
+				<td class="estado">Rondônia</td>
+				<td class="numero">1.590.011</td>
+			</tr>
+			<tr>
+				<td class="posicao">24</td>
+				<td class="estado">Tocantins</td>
+				<td class="numero">1.417.694</td>
+			</tr>
+			<tr>
+				<td class="posicao">25</td>
+				<td class="estado">Acre</td>
+				<td class="numero">758.786</td>
+			</tr>
+			<tr>
+				<td class="posicao">26</td>
+				<td class="estado">Amapá</td>
+				<td class="numero">698.602</td>
+			</tr>
+			<tr>
+				<td class="posicao">27</td>
+				<td class="estado">Roraima</td>
+				<td class="numero">469.524</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<th colspan="2">Total de Habitantes</th>
+				<td class="numero"><strong>210.147.125</strong></td>
+			</tr>
+		</tfoot>
+	</table>
+</body>
+</html>

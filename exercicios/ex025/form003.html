@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"content="widgt=device-widgt, initial-scale=1.0">
+  
+  <title>Teste de formulário</title>
+  
+</head>
+<body>
+	<h1>
+		Teste de Formulário 
+	</h1>
+	<form method="get" autocomplete="on">
+		<p>
+			<label for="idnome">Nome: </label>
+			<input type="text" name="nome" id="idnome" required minlength="8" placeholder="Nome completo" autocomplete="username">
+		</p>
+		<p>
+			<label for="idmedia">Média</label>
+			<input type="number" name="media" id="idmedia"  min="0" max="10" step="0.1" placeholder="0 a 10" value="5" required>
+		</p>
+		<p>
+			<label for="idmes">Período letivo</label>
+			<input type="month" name="mes" id="idmes" value="2024-01">
+		</p>
+		<p>
+			<label for="iddia">Dia da Prova</label>
+			<input type="date" name="dia" id="iddia" value="2024-01-20">
+		</p>
+		<p>
+			<label for="idhora">Hora da Prova</label>
+			<input type="time" name="hora" id="idhora" value="10:35">
+		</p>
+		<p>
+			<input type="submit" value="Cadastrar">
+			<input type="reset" value="Limpar">
+		</p>
+	</form>
+</body>
+</html>

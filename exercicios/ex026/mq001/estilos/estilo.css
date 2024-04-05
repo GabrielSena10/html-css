@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+*{
+	font-family: Arial, Verdana, Sans-Serif;
+	padding: 0px;
+	margin: 0px;
+	font-size: 1em;
+}
+h1{
+	text-align: center;
+	padding: 10px;
+	font-size: 2em;
+}
+menu{
+	text-align: center;
+	padding: 10px;
+}
+ul{
+	list-style-type: none;
+}
+main{
+	margin: auto;
+	max-width: 800px;
+	padding: 10px;
+}
+main > article > p{
+	text-indent: 30px;
+	text-align: justify;
+	padding: 10px;
+}

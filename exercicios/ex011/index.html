@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"content="widgt=device-widgt, initial-scale=1.0">
+
+  <title>Mídias em HTML</title>
+  
+</head>
+<body>
+	<h1>Imagens dinâmicas</h1>
+	<p>Tente abrir este site em vários dispositivos diferentes ou aumente e diminua o tamanho do seu navegador.</p>
+	<picture>
+		<source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png">
+		<source media="(max-width:1050px)" srcset="imagens/foto-m.png" type="image/png">
+		<img src="imagens/foto-g.png" alt="Foto grande">
+	</picture>
+	<h1>Reproduzindo áudio</h1>
+	<p>Vamos tentar reproduzir áudio em HTML</p>
+	<audio preload="metadata" controls autoplay>
+		<source src="midia/my-imortal.mp3" type="audio/mpeg">
+		<source src="midia/my-imortal.ogg" type="audio/ogg">
+		<source src="midia/my-imortal.wav" type="audio/wav">
+		<p>Seu navegador não consegue reproduzir o áudio.<a href="midia/my-imortal.mp3" download"my-imortal.mp3" type="audio/mpeg">Clique aqui para baixar o arquivo.</a></p>
+	</audio>
+</body>
+</html>

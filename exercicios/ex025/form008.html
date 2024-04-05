@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"content="widgt=device-widgt, initial-scale=1.0">
+  
+  <title>Formulário</title>
+  
+</head>
+<body>
+	<h1>
+		Teste de Formulário 
+	</h1>
+	<form action="cadastro.php" method="get" autocomplete="on">
+		<p>
+			<label for="idnum1">Num1: </label>
+			<input type="number" name="num1" id="idnum1" oninput="idsoma.innerHTML = Number(idnum1.value) + Number(idnum2.value)" required>
+		</p>
+		<p>
+			<label for="idnum2">Num2: </label>
+			<input type="number" name="num2" id="idnum2" oninput="idsoma.innerHTML = Number(idnum1.value) + Number(idnum2.value)" required>
+		</p>
+		<p>
+			<label for="idsoma">Soma:</label>
+			<output name="soma" id="idsoma">0</output>
+		</p>
+		<p>
+			<label for="idpos">Posicione: </label>
+			<input type="range" name="pos" id="idpos" min="0" max="10" value="5" oninput="idqualpos.innerHTML = Number(idpos.value)">
+			<output name="qualpos" id="idqualpos">5</output>
+		</p>
+		<p>
+			<input type="submit" value="Enviar">
+			<input type="reset" value="Limpar">
+		</p>
+	</form>
+</body>
+</html>
