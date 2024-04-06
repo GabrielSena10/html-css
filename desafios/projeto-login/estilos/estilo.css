@@ -79,7 +79,7 @@ input{
 input.cadastro{
 	background-color: #aaddaa;
 	height: 40px;
-	width: calc(100% - 44px);
+	width: calc(100% - 44.5px);
 	border: 2px solid #6800aa;
 }
 input.cadastro:focus{

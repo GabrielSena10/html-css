@@ -61,7 +61,7 @@
 /*Media landscape*/
 @media screen and (orientation: landscape) and (max-height: 479px){
 	main{
-		height: 230px;
+		height: 240px;
 		width: 80vw;
 	}
 	section#imagem{
@@ -75,15 +75,16 @@
 		width: 70%;
 	}
 	section#login > h1{
-		padding: 5px;
+		padding-top: 0px;
+		padding-bottom: 5px;
 	}
 	form > p#pinput{
 		display: inline-block;
-	  width: 49.4%;
+		width: 49.15%;
 	}
 	form > a{
 		display: inline-block;
-		width: 49.4%;
+		width: 49.15%;
 		transform: translateY(-2px);
 	}
 }
