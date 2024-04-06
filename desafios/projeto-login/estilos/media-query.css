@@ -61,7 +61,7 @@
 /*Media landscape*/
 @media screen and (orientation: landscape) and (max-height: 479px){
 	main{
-		height: 240px;
+		height: 230px;
 		width: 80vw;
 	}
 	section#imagem{
