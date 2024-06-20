@@ -1,0 +1,74 @@
+@charset 'UTF-8';
+
+*{
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.clock{
+	position: relative;
+	display: flex;
+	height: 500px;
+	width: 500px;
+	background-color: lightgray;
+	border-radius: 50%;
+	justify-content: center;
+	align-items: center;
+}
+
+.num{
+	position: absolute;
+	transform: rotate(calc(30deg * var(--n)));
+	text-align: center;
+	inset: 20px;
+	font-size: 40px;
+}
+
+.num > p{
+	transform: rotate(calc(-30deg * var(--n)));
+	display: inline-block;
+}
+
+.center-dot{
+	position: absolute;
+	height: 25px;
+	width: 25px;
+	background-color: gray;
+	border-radius: 50%;
+}
+
+.hour-hand, .minute-hand, .second-hand{
+	--rotate: 0;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -100%) rotate(calc(var(--rotate) * 1deg));
+	transform-origin: bottom;
+}
+
+.hour-hand{
+	height: 130px;
+	width: 12px;
+	background-color: black;
+}
+
+.minute-hand{
+	height: 190px;
+	width: 12px;
+	background-color: blue;
+}
+
+.second-hand{
+	height: 210px;
+	width: 6px;
+	background-color: red;
+}
